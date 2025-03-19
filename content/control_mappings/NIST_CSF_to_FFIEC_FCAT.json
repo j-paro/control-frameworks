@@ -1,0 +1,384 @@
+{
+    "ID.AM-1": [
+        "D1.G.IT.B.1"
+    ],
+    "ID.AM-2": [
+        "D1.G.IT.B.1"
+    ],
+    "ID.AM-3": [
+        "D4.C.Co.B.4",
+        "D4.C.Co.Int.1"
+    ],
+    "ID.AM-4": [
+        "D4.RM.Dd.B.2",
+        "D4.C.Co.B.3"
+    ],
+    "ID.AM-5": [
+        "D1.G.IT.B.2"
+    ],
+    "ID.AM-6": [
+        "D1.R.St.B.1",
+        "D1.TC.Cu.B.1"
+    ],
+    "ID.BE-1": [
+        "D1.G.SP.A.3"
+    ],
+    "ID.BE-2": [
+        "D1.G.SP.Inn.1"
+    ],
+    "ID.BE-3": [
+        "D1.G.SP.E.2",
+        "D1.G.Ov.Int.5",
+        "D1.G.SP.Int.3"
+    ],
+    "ID.BE-4": [
+        "D4.C.Co.B.1",
+        "D1.G.IT.B.2"
+    ],
+    "ID.BE-5": [
+        "D5.IR.Pl.B.5",
+        "D5.IR.Pl.E.3"
+    ],
+    "ID.GV-1": [
+        "D1.G.SP.B.4"
+    ],
+    "ID.GV-2": [
+        "D1.G.SP.B.7",
+        "D4.RM.Co.B.2",
+        "D4.RM.Co.B.5"
+    ],
+    "ID.GV-3": [
+        "D1.G.Ov.E.2"
+    ],
+    "ID.GV-4": [
+        "D1.G.Ov.B.1",
+        "D1.G.Ov.B.3",
+        "D1.G.Ov.E.1",
+        "D1.G.SP.E.1",
+        "D1.G.Ov.Int.1"
+    ],
+    "ID.RA-1": [
+        "D2.TI.Ti.B.2",
+        "D3.DC.Th.B.1",
+        "D1.RM.RA.E.2",
+        "D3.DC.Th.E.5",
+        "D3.DC.Th.A.1"
+    ],
+    "ID.RA-2": [
+        "D2.TI.Ti.B.1"
+    ],
+    "ID.RA-3": [
+        "D3.DC.An.B.1",
+        "D2.MA.Ma.E.1",
+        "D2.MA.Ma.E.4",
+        "D2.MA.Ma.Int.2"
+    ],
+    "ID.RA-4": [
+        "D5.DR.Re.B.1",
+        "D5.ER.Es.E.1"
+    ],
+    "ID.RA-5": [
+        "D1.RM.RA.B.1",
+        "D1.RM.RA.E.2",
+        "D1.RM.RA.E.1"
+    ],
+    "ID.RA-6": [
+        "D5.IR.Pl.B.1",
+        "D5.DR.Re.E.1",
+        "D5.IR.Pl.E.1"
+    ],
+    "ID.RM-1": [
+        "D1.G.Ov.B.1"
+    ],
+    "ID.RM-2": [
+        "D1.G.Ov.Int.3"
+    ],
+    "ID.RM-3": [
+        "D1.G.SP.A.4"
+    ],
+    "PR.AC-1": [
+        "D3.PC.Im.B.7",
+        "D3.PC.Am.B.6"
+    ],
+    "PR.AC-2": [
+        "D3.PC.Am.B.11",
+        "D3.PC.Am.B.17"
+    ],
+    "PR.AC-3": [
+        "D3.PC.Am.B.15",
+        "D3.PC.De.E.7",
+        "D3.PC.Im.Int.2"
+    ],
+    "PR.AC-4": [
+        "D3.PC.Am.B.1",
+        "D3.PC.Am.B.2",
+        "D3.PC.Am.B.5"
+    ],
+    "PR.AC-5": [
+        "D3.PC.Im.B.1",
+        "D3.PC.Im.Int.1"
+    ],
+    "PR.AT-1": [
+        "D1.TC.Tr.B.2"
+    ],
+    "PR.AT-2": [
+        "D1.TC.Tr.E.3"
+    ],
+    "PR.AT-3": [
+        "D1.TC.Tr.B.4",
+        "D1.TC.Tr.Int.2"
+    ],
+    "PR.AT-4": [
+        "D1.TC.Tr.E.2"
+    ],
+    "PR.AT-5": [
+        "D1.TC.Tr.E.3",
+        "D1.R.St.E.3"
+    ],
+    "PR.DS-1": [
+        "D3.PC.Am.B.14",
+        "D4.RM.Co.B.1",
+        "D3.PC.Am.A.1"
+    ],
+    "PR.DS-2": [
+        "D3.PC.Am.B.13",
+        "D3.PC.Am.E.5",
+        "D3.PC.Am.Int.7"
+    ],
+    "PR.DS-3": [
+        "D1.G.IT.E.3",
+        "D1.G.IT.E.2"
+    ],
+    "PR.DS-4": [
+        "D5.IR.Pl.B.5",
+        "D5.IR.Pl.B.6",
+        "D5.IR.Pl.E.3",
+        "D3.PC.Im.E.4"
+    ],
+    "PR.DS-5": [
+        "D3.PC.Am.B.15",
+        "D3.PC.Am.Int.1",
+        "D3.PC.De.Int.1",
+        "D3.DC.Ev.Int.1"
+    ],
+    "PR.DS-6": [
+        "D3.PC.Se.Int.3",
+        "D3.PC.De.Int.2"
+    ],
+    "PR.DS-7": [
+        "D3.PC.Am.B.10"
+    ],
+    "PR.IP-1": [
+        "D3.PC.Im.B.5"
+    ],
+    "PR.IP-2": [
+        "D3.PC.Se.B.1",
+        "D3.PC.Se.E.1"
+    ],
+    "PR.IP-3": [
+        "D1.G.IT.B.4"
+    ],
+    "PR.IP-4": [
+        "D5.IR.Pl.B.5",
+        "D5.IR.Te.E.3"
+    ],
+    "PR.IP-5": [
+        "D3.PC.Am.B.11"
+    ],
+    "PR.IP-6": [
+        "D3.PC.Am.B.18"
+    ],
+    "PR.IP-7": [
+        "D1.RM.RMP.E.2",
+        "D1.G.Ov.A.2"
+    ],
+    "PR.IP-8": [
+        "D2.IS.Is.B.1",
+        "D2.IS.Is.E.2"
+    ],
+    "PR.IP-9": [
+        "D5.IR.Pl.B.1"
+    ],
+    "PR.IP-10": [
+        "D5.IR.Te.B.1",
+        "D5.IR.Te.B.3"
+    ],
+    "PR.IP-11": [
+        "D1.R.St.E.4"
+    ],
+    "PR.IP-12": [
+        "D3.CC.Re.E.2"
+    ],
+    "PR.MA-1": [
+        "D3.CC.Re.Int.5",
+        "D3.CC.Re.Int.6"
+    ],
+    "PR.MA-2": [
+        "D3.PC.Im.B.7"
+    ],
+    "PR.PT-1": [
+        "D1.G.SP.B.3",
+        "D2.MA.Ma.B.1",
+        "D2.MA.Ma.B.2"
+    ],
+    "PR.PT-2": [
+        "D1.G.SP.B.4",
+        "D3.PC.De.B.1",
+        "D3.PC.Im.E.3"
+    ],
+    "PR.PT-3": [
+        "D3.PC.Am.B.7",
+        "D3.PC.Am.B.4",
+        "D3.PC.Am.B.3",
+        "D4.RM.Om.Int.1"
+    ],
+    "PR.PT-4": [
+        "D3.PC.Im.B.1",
+        "D3.PC.Am.B.11",
+        "D3.PC.Im.Int.1"
+    ],
+    "DE.AE-1": [
+        "D3.DC.Ev.B.1",
+        "D4.C.Co.B.4"
+    ],
+    "DE.AE-2": [
+        "D5.IR.Pl.Int.4"
+    ],
+    "DE.AE-3": [
+        "D3.DC.Ev.E.1"
+    ],
+    "DE.AE-4": [
+        "D5.IR.Te.E.1",
+        "D5.ER.Es.E.1",
+        "D1.RM.RMP.A.4"
+    ],
+    "DE.AE-5": [
+        "D5.DR.De.B.1",
+        "D3.DC.An.E.4",
+        "D3.DC.An.Int.3"
+    ],
+    "DE.CM-1": [
+        "D3.DC.An.B.2",
+        "D3.DC.An.B.3"
+    ],
+    "DE.CM-2": [
+        "D3.PC.Am.E.4",
+        "D3.DC.Ev.B.5"
+    ],
+    "DE.CM-3": [
+        "D3.DC.An.A.3"
+    ],
+    "DE.CM-4": [
+        "D3.DC.Th.B.2"
+    ],
+    "DE.CM-5": [
+        "D3.PC.De.E.5"
+    ],
+    "DE.CM-6": [
+        "D4.RM.Om.Int.1"
+    ],
+    "DE.CM-7": [
+        "D3.DC.Ev.B.3"
+    ],
+    "DE.CM-8": [
+        "D3.DC.Th.E.5"
+    ],
+    "DE.DP-1": [
+        "D3.DC.Ev.B.4"
+    ],
+    "DE.DP-2": [
+        "D1.G.Ov.E.2"
+    ],
+    "DE.DP-3": [
+        "D3.DC.Ev.Int.2"
+    ],
+    "DE.DP-4": [
+        "D3.DC.Ev.B.2",
+        "D5.ER.Es.B.1",
+        "D5.ER.Es.E.1"
+    ],
+    "DE.DP-5": [
+        "D5.IR.Pl.Int.3"
+    ],
+    "RS.RP-1": [
+        "D5.IR.Pl.B.1"
+    ],
+    "RS.CO-1": [
+        "D5.IR.Pl.B.3"
+    ],
+    "RS.CO-2": [
+        "D5.IR.Pl.B.2",
+        "D5.ER.Es.B.4",
+        "D5.DR.Re.E.6",
+        "D5.ER.Es.B.4"
+    ],
+    "RS.CO-3": [
+        "D5.ER.Es.B.2"
+    ],
+    "RS.CO-4": [
+        "D5.ER.Es.B.1",
+        "D5.IR.Pl.Int.1"
+    ],
+    "RS.CO-5": [
+        "D2.IS.Is.B.3",
+        "D2.IS.Is.E.2"
+    ],
+    "RS.AN-1": [
+        "D5.DR.De.B.3",
+        "D5.DR.De.Int.3"
+    ],
+    "RS.AN-2": [
+        "D1.RM.RMP.A.4",
+        "D5.IR.Te.E.1",
+        "D5.ER.Es.E.1"
+    ],
+    "RS.AN-3": [
+        "D3.CC.Re.Int.3",
+        "D3.CC.Re.Int.4"
+    ],
+    "RS.AN-4": [
+        "D5.ER.Es.B.4",
+        "D5.DR.Re.E.1"
+    ],
+    "RS.MI-1": [
+        "D5.DR.Re.B.1",
+        "D5.DR.Re.E.4",
+        "D5.DR.Re.E.2",
+        "D5.DR.Re.E.3"
+    ],
+    "RS.MI-2": [
+        "D5.DR.De.B.1",
+        "D5.DR.Re.E.3",
+        "D3.PC.Im.E.4"
+    ],
+    "RS.MI-3": [
+        "D1.RM.RA.E.1"
+    ],
+    "RS.IM-1": [
+        "D5.IR.Pl.Int.4"
+    ],
+    "RS.IM-2": [
+        "D5.IR.Pl.Int.4",
+        "D5.IR.Te.Int.5"
+    ],
+    "RC.RP-1": [
+        "D5.IR.Pl.B.6"
+    ],
+    "RC.IM-1": [
+        "D5.IR.Pl.Int.4"
+    ],
+    "RC.IM-2": [
+        "D5.IR.Pl.Int.4",
+        "D5.IR.Te.Int.5"
+    ],
+    "RC.CO-1": [
+        "D5.ER.Es.Int.3"
+    ],
+    "RC.CO-2": [
+        "D5.IR.Pl.Int.1"
+    ],
+    "RC.CO-3": [
+        "D5.ER.Es.B.1",
+        "D5.IR.Pl.Int.1"
+    ]
+}
