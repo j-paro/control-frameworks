@@ -8,7 +8,7 @@ from app.schemas.mem_data import (
 )
 
 
-def load_cis_csc_data() -> Framework:
+def load_cis_csc_data(id) -> Framework:
     df = pandas.read_excel(
         open("content/CIS_CSC/CIS_Controls_Version_8.xlsx", "rb"),
         sheet_name="Controls V8",
@@ -21,7 +21,7 @@ def load_cis_csc_data() -> Framework:
     df.at[150, "CIS Safeguard"] = "16.10"
 
     cis_csc = Framework(
-        string_id="CIS CSC",
+        id=id,
         name="CIS CSC",
         description="CIS Controls",
         owner="CIS",

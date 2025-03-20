@@ -1,3 +1,5 @@
+from uuid import UUID
+
 from fastapi import APIRouter, HTTPException
 
 from app.schemas.responses import FrameworkResponse
@@ -16,7 +18,7 @@ async def get_frameworks():
 
 
 @router.get("/id/{framework_id}", response_model=FrameworkResponse)
-async def get_framework_by_id(framework_id: str):
+async def get_framework_by_id(framework_id: UUID):
     """
     Get a framework by id
     """

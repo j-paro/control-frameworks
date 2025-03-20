@@ -1,3 +1,5 @@
+from uuid import UUID
+
 from fastapi import APIRouter, HTTPException
 
 from app.schemas.responses import CategoryResponse
@@ -8,10 +10,8 @@ from app.lifespan import data
 router = APIRouter()
 
 
-@router.get(
-    "/by_framework/{framework_id}", response_model=list[CategoryResponse]
-)
-async def get_categories_by_framework(framework_id: str):
+@router.get("/by_framework/{framework_id}", response_model=list[CategoryResponse])
+async def get_categories_by_framework(framework_id: UUID):
     """
     Get all categories for a framework
     """
@@ -22,12 +22,12 @@ async def get_categories_by_framework(framework_id: str):
     return framework.categories
 
 
-@router.get("/by_string_id/{cat_string_id}", response_model=CategoryResponse)
-async def get_category_by_string_id(cat_string_id: str):
+@router.get("/id/{category_id}", response_model=CategoryResponse)
+async def get_category(category_id: UUID):
     """
     Get a category
     """
-    category = data.category_index.get(cat_string_id)
+    category = data.category_index.get(category_id)
     if category is None:
         raise HTTPException(status_code=404, detail="Category not found")
     return category

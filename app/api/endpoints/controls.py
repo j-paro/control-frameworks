@@ -1,3 +1,5 @@
+from uuid import UUID
+
 from fastapi import APIRouter, HTTPException
 from app.schemas.mem_data import Control
 from app.schemas.responses import (
@@ -9,6 +11,20 @@ from app.lifespan import data
 
 
 router = APIRouter()
+
+
+@router.get(
+    "/id/{control_id}",
+    response_model=ControlResponse,
+)
+async def get_control_by_id(control_id: UUID):
+    """
+    Get a control by its ID
+    """
+    control = data.control_index.get(control_id)
+    if not control:
+        raise HTTPException(status_code=404, detail="Control not found")
+    return control
 
 
 @router.get(
@@ -31,7 +47,7 @@ async def get_control_by_string_id(control_string_id: str):
     "/by_category/{category_id}",
     response_model=CategoryWithControlsResponse,
 )
-async def get_controls_by_category(category_id: str):
+async def get_controls_by_category(category_id: UUID):
     """
     Get all controls for a category
     """
@@ -41,10 +57,8 @@ async def get_controls_by_category(category_id: str):
     return category
 
 
-@router.get(
-    "/by_framework/{framework_id}", response_model=list[ControlResponse]
-)
-async def get_controls_by_framework(framework_id: str):
+@router.get("/by_framework/{framework_id}", response_model=list[ControlResponse])
+async def get_controls_by_framework(framework_id: UUID):
     """
     Get all controls for a framework
     """
@@ -91,6 +105,6 @@ async def search_controls(search_string: str):
         control
         for control in data.control_index.values()
         if search_string.lower()
-        in (control.control_string_id + control.title + control.text).lower()
+        in (control.control_string_id + (control.title or "") + control.text).lower()
     ]
     return controls

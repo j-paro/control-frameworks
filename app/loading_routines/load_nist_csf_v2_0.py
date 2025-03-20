@@ -8,9 +8,9 @@ from app.schemas.mem_data import (
 )
 
 
-def load_nist_csf_v2_0_data() -> Framework:
+def load_nist_csf_v2_0_data(id) -> Framework:
     nist_csf = Framework(
-        string_id="NIST CSF v2.0",
+        id=id,
         name="NIST CSF v2.0",
         description="NIST Cybersecurity Framework 2.0",
         owner="NIST",
@@ -40,9 +40,7 @@ def load_nist_csf_v2_0_data() -> Framework:
             )
             func_category.categories.append(cat_category)
 
-            for subcategory_id, subcategory in category[
-                "subcategories"
-            ].items():
+            for subcategory_id, subcategory in category["subcategories"].items():
                 control = Control(
                     control_string_id=subcategory_id,
                     title=subcategory_id,
@@ -54,9 +52,7 @@ def load_nist_csf_v2_0_data() -> Framework:
                 cat_category.controls.append(control)
                 nist_csf.controls.append(control)
 
-                for imp_ex_id, imp_ex in subcategory[
-                    "implementation_examples"
-                ].items():
+                for imp_ex_id, imp_ex in subcategory["implementation_examples"].items():
                     custom_field = CustomField(
                         name=imp_ex_id,
                         value=imp_ex["text"],

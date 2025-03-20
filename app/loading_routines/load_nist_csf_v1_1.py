@@ -7,9 +7,9 @@ from app.schemas.mem_data import (
 )
 
 
-def load_nist_csf_v1_1_data() -> Framework:
+def load_nist_csf_v1_1_data(id) -> Framework:
     nist_csf = Framework(
-        string_id="NIST CSF v1.1",
+        id=id,
         name="NIST CSF v1.1",
         description="NIST Cybersecurity Framework",
         owner="NIST",
@@ -38,9 +38,7 @@ def load_nist_csf_v1_1_data() -> Framework:
             )
             func_category.categories.append(cat_category)
 
-            for subcategory_id, subcategory in category[
-                "subcategories"
-            ].items():
+            for subcategory_id, subcategory in category["subcategories"].items():
                 control = Control(
                     control_string_id=subcategory_id,
                     title=subcategory_id,

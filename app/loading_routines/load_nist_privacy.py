@@ -31,7 +31,7 @@ def check_alignment(value, obj: Union[Framework, Category, Control], obj_type):
         )
 
 
-def load_nist_privacy_data() -> Framework:
+def load_nist_privacy_data(id) -> Framework:
     nist_privacy_df = pd.read_excel(
         "content/NIST_Privacy/NIST-Privacy-Framework-V1.0-Core.xlsx",
         sheet_name="Privacy Framework Core",
@@ -57,7 +57,7 @@ def load_nist_privacy_data() -> Framework:
     nist_privacy_df.replace(np.nan, "", inplace=True)
 
     nist_privacy_framework = Framework(
-        string_id="NIST Privacy Framework",
+        id=id,
         name="NIST Privacy Framework",
         description="NIST Privacy Framework v1.0",
         owner="NIST",

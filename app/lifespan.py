@@ -1,4 +1,5 @@
 from contextlib import asynccontextmanager
+from uuid import uuid4
 
 from app.schemas.mem_data import Framework, Category, Control
 from app.loading_routines.load_nist_csf_v1_1 import load_nist_csf_v1_1_data
@@ -17,12 +18,12 @@ class ControlFrameworksData:
 
     def set_all_data(self, frameworks: dict[str, Framework]):
         def index_cats_and_controls(category: Category):
-            self.category_index[category.cat_string_id] = category
+            self.category_index[category.id] = category
             for child in category.categories:
                 index_cats_and_controls(child)
 
             for control in category.controls:
-                self.control_index[control.control_string_id] = control
+                self.control_index[control.id] = control
 
         self.frameworks = frameworks
 
@@ -38,7 +39,6 @@ data: ControlFrameworksData = ControlFrameworksData()
 async def lifespan(_):
     print("Loading data...")
 
-    id = 0
     frameworks = {}
     load_functions = [
         load_800_171_r2_data,
@@ -50,8 +50,8 @@ async def lifespan(_):
     ]
 
     for load_function in load_functions:
-        framework: Framework = load_function()
-        frameworks[framework.string_id] = framework
+        framework: Framework = load_function(uuid4())
+        frameworks[framework.id] = framework
 
     data.set_all_data(frameworks)
 

@@ -8,10 +8,10 @@ from app.schemas.mem_data import (
 )
 
 
-def load_800_171_r2_data() -> Framework:
+def load_800_171_r2_data(id) -> Framework:
 
     one_7_one = Framework(
-        string_id="NIST SP 800-171",
+        id=id,
         name="NIST SP 800-171",
         description="NIST Special Publication 800-171",
         owner="NIST",

@@ -8,10 +8,10 @@ from app.schemas.mem_data import (
 )
 
 
-def load_ccm_data() -> Framework:
+def load_ccm_data(id) -> Framework:
 
     ccm = Framework(
-        string_id="CCM",
+        id=id,
         name="CCM",
         description="Cloud Controls Matrix v4.0.5",
         owner="The Cloud Security Alliance",
