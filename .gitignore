@@ -2,3 +2,5 @@
 env
 __pycache__
 maintest*
+future_content
+internal
