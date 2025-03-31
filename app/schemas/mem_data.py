@@ -93,3 +93,34 @@ class Control(BaseModel):
 
     def __repr__(self):
         return f"Control(id={self.id}, text={self.text})"
+
+
+class ControlFrameworksData:
+    def __init__(self):
+        self.frameworks: dict[str, Framework] = {}
+        self.category_index: dict[str, Category] = {}
+        self.control_index: dict[str, Control] = {}
+
+    def set_all_data(self, frameworks: dict[str, Framework]):
+        def index_cats_and_controls(category: Category):
+            self.category_index[category.id] = category
+            for child in category.categories:
+                index_cats_and_controls(child)
+
+            for control in category.controls:
+                self.control_index[control.id] = control
+
+        self.frameworks = frameworks
+
+        for framework in self.frameworks.values():
+            for category in framework.categories:
+                index_cats_and_controls(category)
+
+    def set_frameworks(self, frameworks: dict[str, Framework]):
+        self.frameworks = frameworks
+
+    def set_category_index(self, category_index: dict[str, Category]):
+        self.category_index = category_index
+
+    def set_control_index(self, control_index: dict[str, Control]):
+        self.control_index = control_index
