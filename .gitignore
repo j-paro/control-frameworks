@@ -4,7 +4,7 @@ env
 __pycache__
 maintest*
 deprecated
-content/*
+loading_content
 loading_routines
 future_content
 internal
