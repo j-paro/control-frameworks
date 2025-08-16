@@ -2,7 +2,6 @@
 env
 .env
 __pycache__
-maintest*
 deprecated
 loading_routines/load_800_53_r5.py
 loading_routines/load_fcat.py
