@@ -38,7 +38,6 @@ Currently, the API supports the following control frameworks:
 - **Structured Data Access:** Retrieve frameworks, categories, and controls efficiently.
 - **Categories In a Tree Structure:** Categories can be returned in a hierarchical structure.
 - **RESTful API:** Seamlessly integrates with other tools and applications.
-- **Dynamic IDs:** IDs will change upon each API reload.
 - **Search Functionality:** Search for controls and categories based on simple text search.
 - **Documentation:** Comprehensive API documentation using Swagger UI.
 - **Data Loaded Into Memory on Startup:** Fast access to data with minimal overhead.
